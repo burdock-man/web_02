@@ -1,5 +1,21 @@
 웹사이트 디자인 참고 주소 (DBCUT) : https://www.dbcut.com
+신한 디자인 참고 주소 : https://pg.shinhan.com/
 
 연세IT교육원 허병회 선생님 깃허브 : https://github.com/bhher/backend
 
 jQuery 공작소 : https://superkts.com/jquery/
+
+프론트 참고 : https://codepen.io/
+
+날씨 api : https://openweathermap.org/  <== 수원을 찾고싶으면 suwon 검색
+날씨 api 키값 : 50254f5853cf9aac7e28b27480c4c4d4
+날씨 api 사용법 : https://openweathermap.org/appid
+날씨 api 도시코드 : https://openweathermap.org/city/1835553  <== 이 끝이 시티아이디임.
+날씨 api 수원 적용된거 : http://api.openweathermap.org/data/2.5/forecast?id=1835553&appid=50254f5853cf9aac7e28b27480c4c4d4
+※ 어째서인지 브레이브 브라우저에서는 ↑이 사이트에 들어와도 키값을 못받아온다. 크롬으로 돌릴것. // 브라우저 확장프로그램 jsonvew 설치하면 보인당 ㅋㅋ
+※ &units=metric 을 붙이면 섭씨로 바뀜.
+날씨 api 아이콘 : https://openweathermap.org/weather-conditions
+
+w3school로 제이슨 코드 불러오기 : https://www.w3schools.com/jquery/ajax_getjson.asp
+
+아이콘 참고 사이트 : https://fontawesome.com/v5/search/
