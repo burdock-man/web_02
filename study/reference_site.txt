@@ -7,6 +7,8 @@ jQuery 공작소 : https://superkts.com/jquery/
 
 프론트 참고 : https://codepen.io/
 
+아이콘 참고 : https://kr.freepik.com/author/freepik/icons/basic-rounded-lineal_4#uuid=3e0b34f4-b4e2-4a82-8801-55b967dd132a
+
 날씨 api : https://openweathermap.org/  <== 수원을 찾고싶으면 suwon 검색
 날씨 api 키값 : 50254f5853cf9aac7e28b27480c4c4d4
 날씨 api 사용법 : https://openweathermap.org/appid
