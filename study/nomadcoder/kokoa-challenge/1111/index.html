@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #f3f3f3;
+        }
+
+        h1 {
+            margin: 50px auto 20px;
+            text-align: center;
+        }
+
+        .bigBox {
+            width: 700px;
+            height: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: space-evenly;
+        }
+
+        .bigBox .box {
+            width: 45%;
+            height: 45%;
+            border: 10px solid white;
+            box-sizing: border-box;
+        }
+
+        .bigBox .box:nth-child(1) {background: tomato;}
+        .bigBox .box:nth-child(2) {background: teal;}
+        .bigBox .box:nth-child(3) {background: burlywood;}
+        .bigBox .box:nth-child(4) {background: thistle;}
+
+        .bigBox .box .txt {
+            width: 100%;
+            height: 150px;
+            background: white;
+            margin-top: 40px;
+            padding: 10px 0 0 10px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>The Best Colors</h1>
+    <div class="bigBox">
+        <div class="box">
+            <div class="txt">
+                <h2>Tomato</h2>
+                <span>#FF6347</span>
+            </div>
+        </div>
+        <div class="box">
+            <div class="txt">
+                <h2>Teal</h2>
+                <span>#008080</span>
+            </div>
+        </div>
+        <div class="box">
+            <div class="txt">
+                <h2>Burlywood</h2>
+                <span>#DEB887</span>
+            </div>
+        </div>
+        <div class="box">
+            <div class="txt">
+                <h2>Thistle</h2>
+                <span>#D7BFD7</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
