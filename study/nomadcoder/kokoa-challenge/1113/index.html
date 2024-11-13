@@ -1,0 +1,120 @@
+<!-- 
+[아이콘 Play]
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+</svg>
+
+[아이콘 Plus]
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+</svg>
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* ============================================================================
+            공통
+        ============================================================================ */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .cf::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        body {
+            background: #1f2937;
+        }
+
+        /* ============================================================================
+            컨텐츠
+        ============================================================================ */
+
+        .plWrap {
+            width: 450px;
+            margin: 50px auto 0;
+            padding: 30px 10px;
+            border: 5px solid #0ac8b0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="plWrap cf">
+        <div class="plTop">
+            <button class="plTopBtn"></button>
+            <h2>Playlist</h2>
+        </div>
+        <div class="currMusWrqp">
+            <div class="thumb"></div>
+            <div class="txt">
+                <h1>Random<br>Love</h1>
+                <p>by Divay Kapoor</p>
+            </div>
+        </div>
+        <ul class="btnWrap">
+            <li><a href="#" class="playBtn"></a></li>
+            <li><a href="#" class="heartBtn"></a></li>
+            <li><a href="#" class="plusBtn"></a></li>
+        </ul>
+        <ul class="pl">
+            <li>
+                <a href="#">
+                    <div class="thumb"></div>
+                    <div class="txt">
+                        <h2>Matargasti</h2>
+                        <p>Mohit Chauhan</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="thumb"></div>
+                    <div class="txt">
+                        <h2>Attitude</h2>
+                        <p>Lewis OfMan · Attitude</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="thumb"></div>
+                    <div class="txt">
+                        <h2>Try Everything</h2>
+                        <p>Shakira · Zootopia</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="thumb"></div>
+                    <div class="txt">
+                        <h2>Sunflower</h2>
+                        <p>Josepg Vincent · Sunflower</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
