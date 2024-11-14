@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: tomato;
+        }
+
+        #bigBox {
+            width: 200px;
+            height: 200px;
+            background: wheat;
+            border: 2px solid black;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .box {
+            background: teal;
+            border: 2px solid white;
+            margin: 0 auto
+        }
+
+        .box.b1,
+        .box.b3 {
+            width: 50px;
+            height: 50px;
+        }
+
+        .box.b2 {
+            width: 150px;
+            height: 50px;
+            border-style: dashed;
+        }
+    </style>
+</head>
+<body>
+    <div id="bigBox">
+        <div class="box b1"></div>
+        <div class="box b2"></div>
+        <div class="box b3"></div>
+    </div>
+</body>
+</html>

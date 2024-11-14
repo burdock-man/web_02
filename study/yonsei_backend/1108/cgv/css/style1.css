@@ -24,7 +24,7 @@ body{font-family: 'Noto Sans KR', sans-serif; }
 .cgv-ad-top {
     width: 100%;
     height: 80px;
-    background: #acbed6;
+    /* background: #acbed6; */
 }
 
 .cgv-ad-top .container {
@@ -128,13 +128,14 @@ body{font-family: 'Noto Sans KR', sans-serif; }
 .nav .navBg {
     width: 100%;
     height: 0;
-    background: #ddd;
+    background: white;
     position: absolute;
     top: 244px;
     left: 0;
     padding: 0;
     transition: .3s;
     z-index: 9999;
+    border-bottom: 1px solid #ccc;
 }
 
 .nav:hover .navBg {
@@ -260,7 +261,7 @@ nav ul {
 #movieChartBeScreen_wrap {
     width: 100%;
     height: 451px;
-    background: #ddd;
+    /* background: #ddd; */
 }
 
 
