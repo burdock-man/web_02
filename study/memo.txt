@@ -2,3 +2,5 @@
 인텔리제이?? (편하고 좋다함. 부이에쓰 코오드는 쓸수는 있지만 자바에 적합하지 않다고함)
 
 10p 환경변수 하는이유???
+
+<script src="https://kit.fontawesome.com/dbca21bcc7.js" crossorigin="anonymous"></script>

@@ -1,10 +1,10 @@
 import "./App.css";
-import ProductsList from "./ProductsList";
+import InputSample1 from "./InputSample1";
 
 function App() {
 
   return (
-    <ProductsList/>
+    <InputSample1/>
   );
 }
 export default App;
