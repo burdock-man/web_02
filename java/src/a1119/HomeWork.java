@@ -2,7 +2,7 @@ package a1119;
 
 import java.util.Scanner;
 
-public class HomeWork01 {
+public class HomeWork {
     public static void main(String[] args) {
 
         System.out.println("\n(201p 7번문제)=========================================");
@@ -43,17 +43,14 @@ public class HomeWork01 {
         System.out.println("\n=======================================================");
         System.out.println("\n(201p 9번문제)=========================================");
 
-        // 문제 설명하기 애매하니까 페이지 참조.
-
-        Scanner scan = new Scanner(System.in);
-
         // 학생수 > 학생수 3명
         // 점수입력 > 애들 각각 점수를 입력받아서 변수로 선언(배열로하면될듯)
         // 점수리스트 > 그냥 점수 받아서 선언한 변수 출력오는거
         // 분석 > 최고점수 출력, 평균점수 출력(소수점1자리).
         // 종료 > break
 
-
+        Scanner scan = new Scanner(System.in);
+        
         while (true) {
 
             System.out.println("\n.......................................................");
