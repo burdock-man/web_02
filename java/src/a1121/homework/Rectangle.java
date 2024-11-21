@@ -9,14 +9,14 @@ public class Rectangle {
 
     // 생성자 선언
 
-    Ractangle() {};
+    Rectangle() {};
 
-    Ractangle(int width) {
+    Rectangle(int width) {
         this.width = width;
         this.height = height;
     };
 
-    Ractangle(int width, int height) {
+    Rectangle(int width, int height) {
         this.width = width;
         this.height = height;
     };
