@@ -32,6 +32,5 @@ public class WeekEx {
 
         System.out.println("요일: \"" + week + "\"");
 
-
     }
 }
