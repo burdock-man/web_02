@@ -13,11 +13,19 @@ public class Rectangle {
 
     Rectangle(int width) {
         this.width = width;
-        this.height = height;
+        this.height = width;
     };
 
     Rectangle(int width, int height) {
         this.width = width;
         this.height = height;
+    }
+
+    public int getArea(int i, int j) {
+        return i * j;
+    };
+
+    public int getPerimeter(int i, int j) {
+        return (i * 2) + (j * 2);
     };
 }
