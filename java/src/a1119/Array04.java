@@ -7,13 +7,6 @@ public class Array04 {
         int max = arr[0]; // 배열의 첫번째를 최대값에 대입
         int min = arr[0]; // 배열에 첫번째를 최소값에 대입
 
-        // for (int i = 0; i < arr.length; i++) {
-        //     if (max < arr[i]) {
-        //         max = arr[i];
-        //     } else if (min > arr[i]) {
-        //         min = arr[i];
-        //     }
-        // }
 
         for (int boom : arr) {
             if (max < boom) max = boom;
