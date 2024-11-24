@@ -51,6 +51,8 @@ class Student {
         System.out.println("|                                                                                                  |");
         System.out.println("| 학생 리스트                                                                                      |");
 
+        sTotalClear();
+
         for (int j = 0; j < i.length; j++) {
             System.out.printf("| %d | 이름: %s | 학번: %d | 국어점수: %3d | 영어점수: %3d | 수학점수: %3d | 평균: %3.02f  |\n",
             i[j].number, i[j].name, i[j].id, i[j].koreanScore, i[j].englishScore, i[j].mathScore, i[j].average);
@@ -69,14 +71,6 @@ class Student {
         System.out.println("|                                                                                                  |");
     }
 
-    // 정보수정메서드
-    // public static void sMod(Student i) {
-
-
-    // }
-
-
-
     // 게터, 세터
     public String getName() {return name;}
     public void setName(String name) {this.name = name;}
@@ -85,27 +79,54 @@ class Student {
     public void setId(int id) {this.id = id;}
 
     public int getKoreanScore() {return koreanScore;}
-    public void setKoreanScore(int koreanScore) {this.koreanScore = koreanScore;}
+    public void setKoreanScore(int koreanScore) {this.koreanScore = koreanScore; updateAverage();}
 
     public int getEnglishScore() {return englishScore;}
-    public void setEnglishScore(int englishScore) {this.englishScore = englishScore;}
+    public void setEnglishScore(int englishScore) {this.englishScore = englishScore; updateAverage();}
 
     public int getMathScore() {return mathScore;}
-    public void setMathScore(int mathScore) {this.mathScore = mathScore;}
+    public void setMathScore(int mathScore) {this.mathScore = mathScore; updateAverage();}
 
     public int getNumber() {return number;}
     public double getAverage() {return average;}
 
+    public static int getTotalKorean() {return totalKorean;}
+    public static void setTotalKorean(int totalKorean) {Student.totalKorean = totalKorean;}
 
+    public static int getTotalEnglish() {return totalEnglish;}
+    public static void setTotalEnglish(int totalEnglish) {Student.totalEnglish = totalEnglish;}
 
+    public static int getTotalMath() {return totalMath;}
+    public static void setTotalMath(int totalMath) {Student.totalMath = totalMath;}
 
-
-
-
-
-
-
-
+    public static int getTotalStudent() {return totalStudent;}
     
+    public static void setTotalStudent(int totalStudent) {Student.totalStudent = totalStudent;}
+
+
+    private void updateAverage() {
+        this.average = (double) (this.koreanScore + this.englishScore + this.mathScore) / 3;
+    }
+
+    public static void updateTotalAverage(Student[] i) {
+
+        sTotalClear();
+    
+        for (Student j : i) {
+            totalKorean += j.getKoreanScore();
+            totalEnglish += j.getEnglishScore();
+            totalMath += j.getMathScore();
+        }
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public static void resetNumbers(Student[] i) {
+        for (int j = 0; j < i.length; j++) {
+            i[j].setNumber(j + 1); // 학생 번호를 배열 순서대로 재할당
+        }
+    }
 
 }
