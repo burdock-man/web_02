@@ -90,11 +90,13 @@ public class StudentEx {
                     sArr[modSelect-1].setMathScore(0);
                 }
 
+                System.out.println("|                                                                                                  |");
 
             } else if (select == 3) {
                 
                 scan.nextLine(); // 개행문자 제거
 
+                System.out.println("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
                 System.out.println("|                                                                                                  |");
                 System.out.println("| 생성할 학생의 이름을 입력해 주세요.                                                              |");
                 System.out.print("| 이름> ");
@@ -125,6 +127,7 @@ public class StudentEx {
 
                 System.out.println("|                                                                                                  |");
                 System.out.println("| 새로운 학생이 추가되었습니다.                                                                  |");
+                System.out.println("|                                                                                                  |");
 
             } else if (select == 4) {
 
@@ -150,6 +153,7 @@ public class StudentEx {
 
                 System.out.println("|                                                                                                  |");
                 System.out.println("| 선택한 학생이 삭제되었습니다.                                                                  |");
+                System.out.println("|                                                                                                  |");
 
                 Student[] newArr = new Student[sArr.length - 1];
                 int newIdx = 0;
@@ -165,12 +169,15 @@ public class StudentEx {
 
                 
             } else if (select == 5) {
+                System.out.println("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
+                System.out.println("|                                                                                                  |");
                 System.out.println("| 프로그램 종료                                                                                    |");
+                System.out.println("|                                                                                                  |");
                 System.out.println("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
                 break;
             } else {
                 System.out.println("|                                                                                                  |");
-                System.out.println("| 잘못된 번호입니다. 1부터 5까지의 번호를 입력해 주세요.                                           |");
+                System.out.println(                                                                                                                                                                                                                                                                                                                                                                                                                                                                               "| 잘못된 번호입니다. 1부터 5까지의 번호를 입력해 주세요.                                           |");
                 System.out.println("|                                                                                                  |");
             }
 
