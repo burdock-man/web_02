@@ -11,14 +11,14 @@ class Cat extends Animal {
 
     @Override
     void cry() {
-        System.out.println("나용나용!!");     
-    }   
+        System.out.println("나용나용!!");
+    }
 }
 class Dog extends Animal{
     @Override
     void cry() {
-      System.out.println("멍멍");        
-    }    
+      System.out.println("멍멍");
+    }
 }
 
 
