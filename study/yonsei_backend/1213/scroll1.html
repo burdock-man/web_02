@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    // 댓글생성버튼 변수화
+    const commentCreateBtn = document.querySelector("#comment-create-btn");
+
+    // 댓글 클릭 이벤트 감지
+    commentCreateBtn.addEventListener("click",function(){
+        const comment = {
+            nickname : document.querySelector("#new-comment-nickname").value,
+            body : document.querySelector("#new-comment-body").value,
+            article_id : document.querySelector("#new-article-id").value
+        };
+        console.log(comment);
+        const url = "api/articles/"+comment.article_id+"/comments";
+        fetch(url,{
+            method: "post", // 포스트(요청)으로
+            body: JSON.stringify(comment), // comment 리터럴 객체를 json 파일로 변경
+            headers: {"Content-Type" : "application/json"}
+        }).then(response => {
+            const msg = (response.ok) ? "댓글이 등록되었습니다." : "댓글 등록 실패!";
+            alert(msg);
+            // 현재페이지를 새로고침
+            window.location.reload();
+        });
+    });
+
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
